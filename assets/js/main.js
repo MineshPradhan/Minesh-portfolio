@@ -11,11 +11,11 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
-// Activate and Remove Menu
+// Active and Remove Menu
 const navLink = document.querySelectorAll('.nav__link');   
 
 function linkAction(){
-//   Activate Link
+//   Active Link
   navLink.forEach(n => n.classList.remove('active'));
   this.classList.add('active');
   
@@ -44,14 +44,13 @@ sr.reveal('.about__img',{});
 sr.reveal('.about__subtitle',{delay: 400}); 
 sr.reveal('.about__text',{delay: 400}); 
 
-// Scroll Skill
+// Scroll Skills
 sr.reveal('.skills__subtitle',{}); 
 sr.reveal('.skills__text',{}); 
-// sr.reveal('.skills__data',{interval: 200}); 
 sr.reveal('.skills__data',{interval: 600}); 
 sr.reveal('.skills__img',{delay: 600});
 
-// Scroll Work
+// Scroll Works
 sr.reveal('.work__img',{interval: 200}); 
 
 // Scroll Contact
